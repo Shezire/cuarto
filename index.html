@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box height="0.1"  width="4"  depth="4"  position="0 0 0"  color="green" opacity="1" ></a-box>
+        
+      <a-box height="2.5"  width="0.1"  depth="4" position="2 1.25 0"  color="pink"></a-box>
+               
+      <a-box height="2.5"  width="0.1"  depth="4" position="-2 1.25 0"  color="pink"></a-box>
+        
+      <a-box height="2.5"  width="4"  depth="0.1" position="0 1.25 -2"  color="pink"></a-box>
+
+
+      <!--<a-box height="2.5"  width="4"  depth="0.1" position="0 1.25 2"  color="orange"></a-box>
+    -->
+
+
+
+      
+
+        <a-box position="0 0 0" height="0.25"  width="0.25"  depth="0.25" 
+        animation="property: rotation.y; from:0 ; to:  360; dur: 2000;  loop: true" 
+        animation__2="property:position; to: 0 5 0; dur: 2000; loop: true ; dir:alternate"    
+        color="tomato">
+        <a-entity geometry="primitive: ring; radiusInner: 0.5; radiusOuter: 1"
+          scale="0.5 0.5 0.5" material="side: double" position="2 0 0" color="orange"></a-entity>
+        
+        </a-box>
+  
+  <a-box position="0 0 -1.25" height="0.25"  width="0.25"  depth="0.25" 
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        
+      <a-entity geometry="primitive: ring; radiusInner: 0.5; radiusOuter: 0.75"
+          material="side: double" position="0 0 0" color="white"></a-entity>
+    </a-box>
+  
+  
+    </a-scene>
+  </body>
+</html>
